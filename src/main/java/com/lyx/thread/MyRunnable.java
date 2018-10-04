@@ -5,7 +5,7 @@ class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("in MyRunnable run");
+        System.out.println("in MyRunnable run " + Thread.currentThread().getName());
         for (i = 0; i < 100; i++) {
             System.out.println(Thread.currentThread().getName() + " " + i);
         }
